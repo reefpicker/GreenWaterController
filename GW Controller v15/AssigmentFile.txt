@@ -1,0 +1,36 @@
+'Assigment file
+'For devices, assign a device number to a relay
+'by using the following statment
+'Device X = Relay N as NAME
+'where X is the tank or device in the layout, starting from left to right
+'for each "section", going left to right
+'and N is the LOGICAL relay number in the BOARD
+'and NAME is the name given to the tank.
+'For the pump write PUMP = n, where n is the relay number
+'
+'Board specifies size of board, i.e. use Board = 16 for a 16 relay board
+Board = 24
+Device 1 = Relay 9 as A1
+device 2 = relay 10 as A2
+device 3 = relay 11 as A3
+device 4 = relay 12 as A4
+device 5 = relay 13 as B1
+device 6 = relay 14 as B2
+device 7 = relay 15 as B3
+device 8 = relay 16 as B4
+device 9 = relay 21 as C1
+device 10 = relay 22 as C2
+device 11 = relay 23 as C3
+device 12 = relay 24 as C4
+device 13 = relay 20 as D1
+device 14 = relay 19 as D2
+device 15 = relay 18 as D3
+device 16 = relay 17 as D4
+device 17 = relay 8 as 2k1
+device 18 = relay 7 as 2k2
+'End device definition
+'if a pump is added, add before the /END line
+PUMP = 1
+Valve Artemia = 2
+Valve Rotifers = 3
+/END
